@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(OIP.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 100%;
+   position: relative;
+
+}
+h1{
+    text-align: center;
+    color: orange;
+    text-shadow: 1px 1px maroon;
+}
+.players{
+    display: flex;
+    justify-content: space-between;
+}
+.players h3{
+    padding: 10px;
+    background-color: orange;
+    border-radius: 5px;
+    color: aliceblue;
+    transition: 2s ease;
+}
+h3.active{
+    background-color: blue;
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px orange,
+                -2px -2px 5px orange;
+}
+.btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 5px;
+}
+button{
+    width: 100px;
+    border: none;
+    background-color: antiquewhite;
+    height: 100px;
+    font-size: 50px;
+    color: aliceblue;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: aqua;
+}
+button:disabled:hover{
+    background-color: antiquewhite;
+}
+h4{
+    text-align: center;
+    font-weight: 600;
+    color: green;
+    line-height: 20px;
+    font-size: large;
+}
+.pop{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+   background: rgba(0,0,0,0.1);
+    
+}
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    display: flex;
+background-color: whitesmoke;
+box-shadow: 2px 2px 5px white,
+-2px -2px 5px white;
+z-index: 99;
+}
+.popup button{
+    width: max-content;
+    font-size: 16px;
+    height: auto;
+    padding: 10px 20px ;
+    border-radius: 5px;
+}
+.popup .rematch{
+    background-color: blue;
+}
+.popup .quit{
+    background-color: red;
+    border: 1px solid wheat;
+    margin-left: 10px;
+    opacity: 0.7;
+    
+}
