@@ -5,13 +5,7 @@ let btns = document.querySelectorAll("button");
 let utter = new SpeechSynthesisUtterance("WELCOME TO JOHNNITTECH TIC-TAC-TOE GAME");
 const voices = speechSynthesis.getVoices()[0];
 utter.voice = voices;
-utter.rate = 0.9;
-utter.pitch= 2;
 speechSynthesis.speak(utter);
-// document.querySelector(".container").style.display='none';
-// setTimeout(()=>{
-//     document.querySelector(".container").style.display='flex';
-// }, 5000);
 
 setTimeout(()=>{
     let utter = new SpeechSynthesisUtterance("Player X starts the game");
